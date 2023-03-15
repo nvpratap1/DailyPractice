@@ -1,0 +1,172 @@
+body{
+	background-color: black;
+	color: #fff;
+	min-height: 100vh;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	perspective: 500px;
+	perspective-origin: 50% calc(50% - 150px); 
+}
+
+.banner {
+	display: flex;
+	transform-style: preserve-3d;
+	animation: rotate 24s linear infinite;
+}
+
+@keyframes rotate {
+	to { transform: rotateY(-360deg);  }
+}
+
+.panel {
+	position: absolute;
+	width: 50px;
+	height: 120px;
+	overflow: hidden;
+	transform: translate(-50%, -50%) rotateY(var(--angle)) translateZ(190px);
+}
+
+.panel::before {
+	position: absolute;
+	content: "Hello World It's nice day to us.";
+	font-size: 96px;
+	left: var(--left);
+	color: hsl(var(--hue), 75%, 75%);
+	width: max-content;
+}
+
+.panel:nth-child(1) {
+	--left: 0px;
+	--hue: calc(15*0);
+	--angle:0deg;
+}
+.panel:nth-child(2) {
+	--left: -50px;
+	--hue: calc(15*1);
+	--angle:calc(1*15deg);
+}
+.panel:nth-child(3) {
+	--left: -100px;
+	--hue: calc(15*2);
+	--angle:calc(2*15deg);
+}
+.panel:nth-child(4) {
+	--left: -150px;
+	--hue: calc(15*3);
+	--angle:calc(3*15deg);
+}
+.panel:nth-child(5) {
+	--left: -200px;
+	--hue: calc(15*4);
+	--angle:calc(4*15deg);
+}
+.panel:nth-child(6) {
+	--left: -250px;
+	--hue: calc(15*5);
+	--angle:calc(5*15deg);
+}
+.panel:nth-child(7) {
+	--left: -300px;
+	--hue: calc(15*6);
+	--angle:calc(6*15deg);
+}
+.panel:nth-child(8) {
+	--left: -350px;
+	--hue: calc(15*7);
+	--angle:calc(7*15deg);
+}
+.panel:nth-child(9) {
+	--left: -400px;
+	--hue: calc(15*8);
+	--angle:calc(8*15deg);
+}
+.panel:nth-child(10) {
+	--left: -450px;
+	--hue: calc(15*9);
+	--angle:calc(9*15deg);
+}
+.panel:nth-child(11) {
+	--left: -500px;
+	--hue: calc(15*10);
+	--angle:calc(10*15deg);
+}
+.panel:nth-child(12) {
+	--left: -550px;
+	--hue: calc(15*11);
+	--angle:calc(11*15deg);
+}
+.panel:nth-child(13) {
+	--left: -600px;
+	--hue: calc(15*12);
+	--angle:calc(12*15deg);
+}
+.panel:nth-child(14) {
+	--left: -650px;
+	--hue: calc(15*13);
+	--angle:calc(13*15deg);
+}
+.panel:nth-child(15) {
+	--left: -700px;
+	--hue: calc(15*14);
+	--angle:calc(14*15deg);
+}
+.panel:nth-child(16) {
+	--left: -750px;
+	--hue: calc(15*15);
+	--angle:calc(15*15deg);
+}
+.panel:nth-child(17) {
+	--left: -800px;
+	--hue: calc(15*16);
+	--angle:calc(16*15deg);
+}
+.panel:nth-child(18) {
+	--left: -850px;
+	--hue: calc(15*17);
+	--angle:calc(17*15deg);
+}
+.panel:nth-child(19) {
+	--left: -900px;
+	--hue: calc(15*18);
+	--angle:calc(18*15deg);
+}
+.panel:nth-child(20) {
+	--left: -950px;
+	--hue: calc(15*19);
+	--angle:calc(19*15deg);
+}
+.panel:nth-child(21) {
+	--left: -1000px;
+	--hue: calc(15*20);
+	--angle:calc(20*15deg);
+}
+.panel:nth-child(22) {
+	--left: -1050px;
+	--hue: calc(15*21);
+	--angle:calc(21*15deg);
+}
+.panel:nth-child(23) {
+	--left: -1100px;
+	--hue: calc(15*22);
+	--angle:calc(22*15deg);
+}
+.panel:nth-child(24) {
+	--left: -1150px;
+	--hue: calc(15*23);
+	--angle:calc(23*15deg);
+}
+
+
+.scene {
+	position: relative;
+	transform-style: preserve-3d;
+}
+
+.screen {
+	position: absolute;
+	width: 400px;
+	height: 400px;
+	transform: translate(-50%, -50%);
+	background-image: linear-gradient(90deg, #000a, #0003, #000a);
+}
