@@ -4,36 +4,118 @@
 <link rel="stylesheet" type="text/css" href="dailypractice.css">
 </head>
 <body>
-<header class="top-header">
-</header>
-<body>
-<main class="fan__container">
-  <input class="fan__input" id="fan-rotate" type="checkbox"/>
-  <input class="fan__input" id="fan-speed" type="checkbox"/>
-  <input class="fan__input" id="fan-power" type="checkbox" checked="checked"/>
-  <div class="fan flexy__center">
-    <div class="fan__hub flexy__center">
-      <div class="fan__blade"></div>
-      <div class="fan__blade"></div>
-      <div class="fan__blade"></div>
-      <div class="fan__blade"></div>
-      <div class="fan__blade"></div>
-      <div class="fan__blade"></div>
+<div class="body-div">
+<input type="radio" name="fan" id="zero"/>
+<input type="radio" name="fan" id="one" checked="true"/>
+<input type="radio" name="fan" id="two"/>
+<input type="radio" name="fan" id="three"/>
+<div class="scene">
+  <div class="fan">
+    <div class="fan__base">
+      <div class="cuboid base">
+        <div class="cuboid__side"></div>
+        <div class="cuboid__side"></div>
+        <div class="cuboid__side"></div>
+        <div class="cuboid__side"></div>
+        <div class="cuboid__side"></div>
+        <div class="cuboid__side"></div>
+      </div>
     </div>
-    <div class="fan__shield">
-      <div class="fan__shield__wires"></div>
-      <div class="fan__shield__wires"></div>
+    <div class="fan__controls">
+      <label class="fan__control" for="zero">
+        <div class="cuboid control">
+          <div class="cuboid__side"></div>
+          <div class="cuboid__side"></div>
+          <div class="cuboid__side"></div>
+          <div class="cuboid__side"></div>
+          <div class="cuboid__side"></div>
+          <div class="cuboid__side"></div>
+        </div>
+      </label>
+      <label class="fan__control" for="one">
+        <div class="cuboid control">
+          <div class="cuboid__side"></div>
+          <div class="cuboid__side"></div>
+          <div class="cuboid__side"></div>
+          <div class="cuboid__side"></div>
+          <div class="cuboid__side"></div>
+          <div class="cuboid__side"></div>
+        </div>
+      </label>
+      <label class="fan__control" for="two">
+        <div class="cuboid control">
+          <div class="cuboid__side"></div>
+          <div class="cuboid__side"></div>
+          <div class="cuboid__side"></div>
+          <div class="cuboid__side"></div>
+          <div class="cuboid__side"></div>
+          <div class="cuboid__side"></div>
+        </div>
+      </label>
+      <label class="fan__control" for="three">
+        <div class="cuboid control">
+          <div class="cuboid__side"></div>
+          <div class="cuboid__side"></div>
+          <div class="cuboid__side"></div>
+          <div class="cuboid__side"></div>
+          <div class="cuboid__side"></div>
+          <div class="cuboid__side"></div>
+        </div>
+      </label>
+    </div>
+    <div class="fan__spine">
+      <div class="cuboid spine">
+        <div class="cuboid__side"></div>
+        <div class="cuboid__side"></div>
+        <div class="cuboid__side"></div>
+        <div class="cuboid__side"></div>
+        <div class="cuboid__side"></div>
+        <div class="cuboid__side"></div>
+      </div>
+    </div>
+    <div class="fan__head">
+      <div class="fan__rotater">
+        <div class="cuboid rotater">
+          <div class="cuboid__side"></div>
+          <div class="cuboid__side"></div>
+          <div class="cuboid__side"></div>
+          <div class="cuboid__side"></div>
+          <div class="cuboid__side"></div>
+          <div class="cuboid__side"></div>
+        </div>
+        <div class="fan__stalk">
+          <div class="cuboid stalk">
+            <div class="cuboid__side"></div>
+            <div class="cuboid__side"></div>
+            <div class="cuboid__side"></div>
+            <div class="cuboid__side"></div>
+            <div class="cuboid__side"></div>
+            <div class="cuboid__side"></div>
+          </div>
+        </div>
+      </div>
+      <div class="fan__barrel">
+        <div class="cuboid barrel">
+          <div class="cuboid__side"></div>
+          <div class="cuboid__side"></div>
+          <div class="cuboid__side"></div>
+          <div class="cuboid__side"></div>
+          <div class="cuboid__side"></div>
+          <div class="cuboid__side"></div>
+        </div>
+      </div>
+      <div class="fan__housing">
+        <div class="fan__housing-rear"></div>
+        <div class="fan__blades">
+          <div class="fan__blade"></div>
+          <div class="fan__blade"></div>
+          <div class="fan__blade"></div>
+        </div>
+        <div class="fan__housing-front"><img src="https://assets.codepen.io/605876/avatar.png"/></div>
+      </div>
     </div>
   </div>
-  <div class="fan__base">
-    <div class="fan__base__arm"></div>
-    <div class="fan__base__foot"></div>
-  </div>
-  <div class="fan__actions">
-    <label class="fan__actions__button" for="fan-power"></label>
-    <label class="fan__actions__button" for="fan-rotate"></label>
-    <label class="fan__actions__button" for="fan-speed"></label>
-  </div>
-</main>
+</div>
+</div>
 </body>
 </html>
